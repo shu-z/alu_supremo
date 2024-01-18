@@ -63,4 +63,6 @@ test_data/custom_perturbations/output/CTCF_del_maps.npy
 test_data/custom_perturbations/output/CTCF_del_tracks.npy
 Akita_model/*
 score_var_output/
-/test_out
+test_out/
+scripts/__pycache__/
+
