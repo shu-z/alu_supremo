@@ -1,0 +1,66 @@
+
+led / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+.DS_Store
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+#more ipynb stuff 
+scoring_pipeline_scratch.ipynb
+scripts/scoring.py
+scripts/hicrep.py
+walkthroughs/.ipynb_checkpoints
+.ipynb_checkpoints/
+**/*.ipynb_checkpoints/
+
+# data and other stuff
+test_data/test_set_edge_cases/test_set_edge_simple_sequences.fa
+test_data/test_set_edge_cases/test_set_edge_simple_sequences.fa.fai
+scripts/OLD_utils.py
+test_data/test_set_sequences/sequences/
+test_data/example_application/tumor_output/
+test_data/custom_perturbations/output/CTCF_del_maps.npy
+test_data/custom_perturbations/output/CTCF_del_tracks.npy
+Akita_model/*
+score_var_output/
+/test_out

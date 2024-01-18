@@ -32,6 +32,7 @@ from pathlib import Path
 
 
 
+os.environ["HDF5_USE_FILE_LOCKING"] = "FALSE"
 
 # # # # # # # # # # # # # # # # # # 
 # # # # # # Load model # # # # # #
@@ -57,6 +58,7 @@ centromere_coords = None
 
 # This file path and model path
 repo_path = Path(__file__).parents[1]
+print(repo_path)
 
 model_file  = f'{repo_path}/Akita_model/model_best.h5'
 params_file = f'{repo_path}/Akita_model/params.json'
@@ -66,8 +68,10 @@ with open(params_file) as params_open:
     params = json.load(params_open)
     params_model = params['model']
     params_train = params['train']
+print('hi1')
 
 params_model['augment_shift']=0
+print('hi')
 
 seq_length = params_model['seq_length']
 target_length = params_model['target_length']
@@ -95,8 +99,9 @@ half_patch_size = round(seq_length/2)
 
 import sys
 sys.path.insert(0, './scripts/')
+print(sys.path)
 import scoring
-
+print('imported scoring')
 
 
 class scoring_map_methods:
